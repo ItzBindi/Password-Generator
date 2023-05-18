@@ -32,17 +32,23 @@ if (lowerCase !== true && upperCase !== true) {
   alert("Make sure to select atleast one character type!")
   generatePassword();
 }else{
-  var randNum = Math.floor(Math.random()* 26);
-  var picklowercase = lowerCaseOptions[randNum]
-  console.log("machine picks" + " " + picklowercase);
-  var pickuppercase = upperCaseOptions[randNum]
-  console.log("machine picks" + " " + pickuppercase);
+  var letters = lowerCaseOptions.concat(upperCaseOptions);
+  var randNum = Math.floor(Math.random() *letters.length);
+  console.log(randNum);
+  var pickletter = letters[randNum]
+  console.log("machine picks" + " " + pickletter);
 
 }
 
+for(let i = 0; i < passwordLength; i++) {
+  passwordLength[i] + generateBtn;
 
 
 
+
+
+
+}
 
 }
 
